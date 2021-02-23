@@ -1,4 +1,12 @@
+/* @ Author Tobechi Onwenu
+ * 
+ * Instructor: Prof Siva Jasthi
+ * 
+ * Lab 6 student.java class for java object oriented
+ * 
+ * 
 
+*/
 public class Student 
 {
 	// for representing the name of the student
@@ -26,10 +34,33 @@ public class Student
 		email = a_email;
 		age = a_age;
 	}
-
 	/**
 	 * Set method for the variable name
 	 */
+
+	private void setName(String a_name) 
+	{
+		name = a_name;
+
+	}
+	/**
+	 * Set method for the variable email
+	 */
+
+	private void setEmail(String a_email) 
+	{
+		email = a_email;
+
+	}
+	/**
+	 * Set method for the variable age
+	 */
+
+	private void setAge(int a_age) 
+	{
+		age = a_age;
+
+	}
 	/**
 	 * Get method for the variable name
 	 */
@@ -75,9 +106,7 @@ public class Student
 		student_2.setName("Susan More");
 		student_2.setEmail("susanmore@gmail.com");
 		student_2.setAge(22);
-		System.out.println(student_2);
-		
-		
+		System.out.println(student_2);	
 
 		// overloaded constructor
 		Student student_3 = new Student("Liang chan", "liangchang@gmail.com", 24);
@@ -86,21 +115,4 @@ public class Student
 		System.out.println(student_4);
 	}
 
-	private void setName(String a_name) 
-	{
-		name = a_name;
-
-	}
-
-	private void setEmail(String a_email) 
-	{
-		email = a_email;
-
-	}
-
-	private void setAge(int a_age) 
-	{
-		age = a_age;
-
-	}
 }
